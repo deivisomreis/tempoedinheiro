@@ -23,6 +23,9 @@ public class ControlsPagesInterceptor extends  HandlerInterceptorAdapter {
 		if(uri.equals("/usuariologin"))
 			return true;
 		
+		if(uri.equals("/sobre"))
+			return true;
+		
 		if(uri.contains("/admin/")){
 			if(AdminAware.existAdmin(request.getSession().getAttribute("usuario")))
 				return true;

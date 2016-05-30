@@ -17,19 +17,48 @@
 				<a class="navbar-brand" href="/home">Tempo & Dinheiro</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/home">Inicio</a></li>
+				<li><a href="/home">Inicio</a></li>
 				<li><a href="/sobre">Projeto</a></li>
 				<li><a href="/usuariologin">Usuario</a></li>
-				<li><a href="/adminlogin">Admin</a></li>
+				<li class="active"><a href="/adminlogin">Admin</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li id="id_button"><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
 			</ul>
 		</div>
 		</nav>
 		<div class="container">
 			<div class="jumbotron">
 				<h1 align="center">Tempo & Dinheiro</h1>
-				<p align="center">Tenha total controle de suas tarefas / finanças</p>
+				<p align="center">Administrador</p>
+				<p align="center">Nesta área será possível gerenciar usuários como também tarefas / finanças</p>
 			</div>
+			
+			<div id="form_login" style="display: none;">
+			<form role="form" action="/adminlogin" method="post">
+				<div class="form-group">
+					<label for="email">Usuário:</label> <input type="email" name="usuario"
+						class="form-control" id="email" placeholder="E-mail">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Senha:</label> <input type="password" name="senha" required="true"
+						class="form-control" id="pwd">
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox"> Remember me</label>
+				</div>
+				<button type="reset" class="btn btn-default">Limpar</button>
+				<button type="submit" class="btn btn-default">Logar</button>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
+<script>
+$("#id_button").click(function(){
+	$(".jumbotron").hide(500);
+	$("#form_login").slideToggle(500);
+});
+</script>
+
 <style>*{font-family: Poiret One, cursive;}</style>

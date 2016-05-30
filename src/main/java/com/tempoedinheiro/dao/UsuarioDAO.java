@@ -6,7 +6,7 @@ public class UsuarioDAO implements UsuarioInterface {
 
 	@Override
 	public void insert(com.tempoedinheiro.model.Usuario usuario) {
-		
+		if(usuario  != null && !usuario.getUs_email().isEmpty() && !usuario.getUs_nome().isEmpty())
 
 	}
 

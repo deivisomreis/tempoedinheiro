@@ -17,8 +17,8 @@
 				<a class="navbar-brand" href="/home">Tempo & Dinheiro</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/home">Inicio</a></li>
-				<li><a href="/sobre">Projeto</a></li>
+				<li><a href="/home">Inicio</a></li>
+				<li class="active"><a href="/sobre">Projeto</a></li>
 				<li><a href="/usuariologin">Usuario</a></li>
 				<li><a href="/adminlogin">Admin</a></li>
 			</ul>
@@ -27,7 +27,7 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1 align="center">Tempo & Dinheiro</h1>
-				<p align="center">Tenha total controle de suas tarefas / finanças</p>
+				<p align="center">Sobre o Projeto</p>
 			</div>
 	</div>
 </body>

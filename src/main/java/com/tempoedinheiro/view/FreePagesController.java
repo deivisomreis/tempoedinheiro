@@ -10,4 +10,9 @@ public class FreePagesController {
 	public String home(){
 		return "home";
 	}
+	
+	@RequestMapping("/sobre")
+	public String sobre(){
+		return "sobre";
+	}
 }
